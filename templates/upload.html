@@ -1,0 +1,35 @@
+{% extends "header.html" %}
+{% block body %}
+ 
+<body>
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="files[]" multiple>
+   
+    <select name="course">
+      <option value="MCA">MCA</option>
+      <option value="BTECH">B.Tech</option>
+      <option value="MTECH">M.Tech</option>
+      <option value="MSC">M.Sc</option>
+      <option value="MBA">MBA</option>
+    </select>
+    <select name="semester">
+      <option value="SEM1">sem-1</option>
+      <option value="SEM2">sem-2</option>
+      <option value="SEM3">sem-3</option>
+      <option value="SEM4">sem-4</option>
+      <option value="SEM5">sem-5</option>
+      <option value="SEM6">sem-6</option>
+    </select>
+    <select name="subject">
+        <option value="OS">Operating system</option>
+        <option value="DBMS">DBMS</option>
+        <option value="COA">COA</option>
+        <option value="UNIX">UNIX</option>
+    </select>
+
+    <input type="submit" value="Upload">
+  </form>
+  
+</body>
+
+{% endblock %}

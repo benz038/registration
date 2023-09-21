@@ -1,0 +1,87 @@
+{% extends "header.html" %}
+{% block body %}
+
+<body>
+
+  <nav>
+    <h1><a href="/">Books Of NITT</a></h1>
+  </nav>
+
+<!-- home -->
+
+<!-- <header>
+    <div class="smoothie">
+      <img src="/public/smoothie.png" alt="">
+    </div>
+    <div class="headings">
+      <h2>Nitt Papers</h2>
+      <h3>By leods From Room No:33</h3>
+      <a href="/public/smoothie.png" class="btn">View Papers</a>
+    </div>
+  </header> -->
+
+  <!-- smoothies -->
+
+
+<ul class="recipes">
+  
+  <li class="recipe">
+    <img src="static/smoothie.png" alt="smoothie recipe icon" >
+    <a href="{{url_for('sem1')}}">
+      <button class="button">
+          SEM-1
+      </button>
+  </a>
+  </li>
+
+  <li class="recipe">
+    <img src="static/smoothie.png" alt="smoothie recipe icon" >
+    <a href="mca.html">
+      <button class="button">
+          SEM-2
+      </button>
+  </a>
+  </li>
+
+  <li class="recipe">
+    <img src="static/smoothie.png" alt="smoothie recipe icon" >
+    <a href="mca.html">
+      <button class="button">
+          SEM-3
+      </button>
+  </a>
+  </li>
+
+  <li class="recipe">
+    <img src="static/smoothie.png" alt="smoothie recipe icon" >
+    <a href="mca.html">
+      <button class="button">
+          SEM-4
+      </button>
+  </a>
+  </li>
+
+  <li class="recipe">
+    <img src="static/smoothie.png" alt="smoothie recipe icon" >
+    <a href="mca.html">
+      <button class="button">
+          SEM-5
+      </button>
+  </a>
+  </li>
+
+  <li class="recipe">
+    <img src="static/smoothie.png" alt="smoothie recipe icon" >
+    <a href="mca.html">
+      <button class="button">
+          SEM-6
+      </button>
+  </a>
+  </li>
+
+</ul>
+
+</body>
+</html>
+
+{% endblock %}
